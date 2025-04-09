@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>花花的身分頁</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 2rem;
+      color: #333;
+    }
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    img.cat-photo {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+    }
+    h1 {
+      margin-bottom: 1rem;
+    }
+    .info-item {
+      margin-bottom: 1rem;
+    }
+    .label {
+      font-weight: bold;
+      color: #555;
+    }
+    .notes {
+      background-color: #f1f1f1;
+      padding: 1rem;
+      border-radius: 8px;
+      white-space: pre-line;
+    }
+    .photo-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .photo-box {
+      flex: 1 1 45%;
+    }
+    .photo-box img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .photo-caption {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 0.3rem;
+    }
+    .contact-button, .companion-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 2rem;
+      margin-right: 0.5rem;
+    }
+    .contact-box, .companion-box {
+      display: none;
+      margin-top: 1rem;
+      padding: 1rem;
+      background: #f0f0f0;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="huahua.jpg" alt="花花" class="cat-photo">
+    <h1>花花 Huahua</h1>
+    <div class="info-item"><span class="label">品種 / 毛色：</span>Mix米克斯 / 白底虎斑 公貓</div>
+    <div class="info-item"><span class="label">來源：</span>2024/2/3 於泰山全球嘉年華社區附近撿到（與白白為同胎）</div>
+    <div class="info-item"><span class="label">生日：</span>不確定</div>
+    <div class="info-item"><span class="label">體重：</span>約5kg，體態不錯</div>
+    <div class="info-item"><span class="label">結紮狀況：</span>2024/5/23 已結紮</div>
+    <div class="info-item"><span class="label">晶片：</span>無</div>
+    <div class="info-item"><span class="label">疫苗施打：</span>近一次施打三合一疫苗約為2024年5-6月</div>
+    <div class="info-item"><span class="label">健康狀況：</span>良好</div>
+    <div class="info-item"><span class="label">性格：</span>怕生、獨立、親人親貓，對主人喜歡跳起來蹭，全身可嚕，不會抓人咬人，喜歡拍屁屁，有時候會嗨起來</div>
+    <div class="info-item"><span class="label">食物偏好：</span>目前吃紐頓 I19 / S5，適應良好（也吃過洛磯山鹿肉鮭魚｜海陸饗宴）</div>
+    <div class="info-item"><span class="label">其他備註：</span>
+      <div class="notes">
+        - 面對熟人喜歡一邊叫一邊蹭人，有點好動
+        - 非常愛玩逗貓棒，需要透過玩耍建立關係
+        - 喜歡木天蓼、超愛吃肉泥、雞肉凍乾、蝦凍乾
+        - 捕獵能力佳
+        - 非常需要垂直空間，喜歡待在高處
+        - 很愛抓貓抓板
+      </div>
+    </div>
+
+    <button class="contact-button" onclick="document.getElementById('contact').style.display='block'">
+      聯絡主人
+    </button>
+    <div id="contact" class="contact-box">
+      <strong>主人聯絡方式：</strong><br>
+      陳俞君 0986918306<br>
+      江承羿 0920225288<br>
+      陳信凱 0936135530<br>
+      顏雪菁 0926773676
+    </div>
+
+    <button class="companion-button" onclick="document.getElementById('companions').style.display='block'">
+      其他寵物同伴
+    </button>
+    <div id="companions" class="companion-box">
+      <a href="baibai.html">白白的頁面</a><br>
+      <a href="maimai.html">麥麥的頁面</a>
+    </div>
+
+    <div class="photo-gallery">
+      <div class="photo-box">
+        <img src="huahua_maimai_sleep.jpg" alt="花花與麥麥睡覺">
+        <div class="photo-caption">與麥麥的感情非常好</div>
+      </div>
+      <div class="photo-box">
+        <img src="huahua_relax.jpg" alt="花花放鬆睡姿">
+        <div class="photo-caption">全身放鬆狀態…</div>
+      </div>
+      <div class="photo-box">
+        <img src="huahua_siblings.jpg" alt="三貓一起躺">
+        <div class="photo-caption">三貓如同親兄弟妹</div>
+      </div>
+      <div class="photo-box">
+        <img src="huahua_sit.jpg" alt="花花坐姿">
+        <div class="photo-caption">正襟危坐的漂釀帥貓</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
